@@ -1,24 +1,15 @@
 {
   "name": "denomination",
-  "version": "1.0.0",
-  "description": "Denomination Currency, module for fragments currency in your country",
+  "version": "1.0.2",
+  "description": "Denomination Currency",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iwandede/denomination.git"
-  },
-  "keywords": [
-    "currency",
-    "fragments",
-    "denomination"
-  ],
   "author": "Iwan Gunawan <iwan.gunawan81@gmail.com> (http://itgps.co.id)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iwandede/denomination/issues"
-  },
-  "homepage": "https://github.com/iwandede/denomination#readme"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
 }

@@ -1,4 +1,3 @@
-"use strict";
 /**
  * [denomination description]
  * Editor : Iwan Gunawan
@@ -7,8 +6,13 @@
  * @return {[type]} [description]
  */
 
-module.export = denomination(amount) {
-  const notes = [1e5, 5e4, 2e4, 1e4, 5e3, 2e3, 1e3, 500, 100, 50];
+module.exports = function denomination(notes, amount) {
+  //const notes = [1e5, 5e4, 2e4, 1e4, 5e3, 2e3, 1e3, 500, 100, 50];
+  if (typeof notes === "undefined" || typeof notes === "string" || typeof notes === "number" ) {
+    console.error('Your first argument must be array');
+    return 0;
+  }
+
   const noteCounter = [];
   let result = [];
 
